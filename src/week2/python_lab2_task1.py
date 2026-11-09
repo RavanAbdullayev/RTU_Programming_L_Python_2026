@@ -94,11 +94,15 @@ if __name__ == "__main__":
         "Daugavpils": 78000,
         "Liepaja": 67000,
         "Jelgava": 55000,
-        "Valmiera": 23000
+        "Valmiera": 23000,
     }
 
     # TODO: call the functions above and print the results
     print(f"Average temperature: {average(temperatures):.1f}")
-    print(f"Largest city: {largest_city(city_population)[0]} - {largest_city(city_population)[1]}")
-    print(f"Smallest city: {smallest_city(city_population)[0]} - {smallest_city(city_population)[1]}")
+    print(
+        f"Largest city: {largest_city(city_population)[0]} - {largest_city(city_population)[1]}"
+    )
+    print(
+        f"Smallest city: {smallest_city(city_population)[0]} - {smallest_city(city_population)[1]}"
+    )
     print(f"Total population: {total_population(city_population)}")

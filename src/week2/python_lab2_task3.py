@@ -29,7 +29,7 @@ Examples (these are also used to check your work):
 {'+': 0, '-': 0, '*': 0, '/': 0, '(': 0, ')': 0}
 """
 
-OPERATORS = ['+', '-', '*', '/', '(', ')']
+OPERATORS = ["+", "-", "*", "/", "(", ")"]
 
 
 def count_operators(expression: str) -> dict[str, int]:

@@ -57,6 +57,7 @@ QUANTITIES = [2, 5, 1, 3, 4]
 
 # ---------- Part A: functional style ----------
 
+
 def item_totals(prices: list[float], quantities: list[int]) -> list[float]:
     """Return price * quantity for each item, using map() and a lambda."""
     # TODO: implement with map()
@@ -76,6 +77,7 @@ def pair_up(prices: list[float], quantities: list[int]) -> list[tuple]:
 
 
 # ---------- Part B: list comprehensions ----------
+
 
 def item_totals_comp(prices: list[float], quantities: list[int]) -> list[float]:
     """Same as item_totals(), but with a list comprehension."""
@@ -97,5 +99,7 @@ if __name__ == "__main__":
     print(f"Totals > 30: {filter_above(item_totals(PRICES, QUANTITIES))}")
     print(f"Price-quantity pairs: {pair_up(PRICES, QUANTITIES)}")
     print(f"Totals (comprehension): {item_totals_comp(PRICES, QUANTITIES)}")
-    print(f"Totals > 30 (comprehension): {filter_above_comp(item_totals_comp(PRICES, QUANTITIES))}")
+    print(
+        f"Totals > 30 (comprehension): {filter_above_comp(item_totals_comp(PRICES, QUANTITIES))}"
+    )
     print("I find list comprehensions easier to read.")
